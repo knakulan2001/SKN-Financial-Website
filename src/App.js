@@ -5,8 +5,8 @@ import ReactGA from "react-ga";
 import Axios from "axios";
 import Login from "./Forms/Login";
 import Error from "./Error/Error";
-import { initGA, logPageView } from "./utils/analytics";
-import ProtectedRoute from "./Helpers/ProtectedRoute";
+import { initGA, logPageView } from "./Utilities/analytics";
+// import ProtectedRoute from "./Helpers/ProtectedRoute";
 import "./App.css";
 
 
@@ -31,8 +31,6 @@ function App() {
                     // Duration for hide animation in ms.
                     autoHideDuration={200}
                 >
-                    <ToastContainer />
-                    <Navbar />
                     <Switch>
                         <Route path="/login" exact component={Login} />
                         {/* <ProtectedRoute path="/forms-page" exact component={FormsPage} /> */}
