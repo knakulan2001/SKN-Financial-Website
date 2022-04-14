@@ -1,0 +1,25 @@
+{
+  "name": "skn-financial-website",
+  "version": "1.0.0",
+  "description": "Webpages to be used by SKN Financial bankers and clients.",
+  "styles": "assets/styling/styles.css",
+  "sass": "assets/scss/styles.scss",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "login-form",
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "web"
+  ],
+  "author": "Nakulan Karthikeyan",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jsdom": "^19.0.0"
+  }
+}

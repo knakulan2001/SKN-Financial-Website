@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../assets/styling/styles.css">
+
+    <script defer src="../login.js"></script>
+
+    <title>Client Home Page</title>
+</head>
+
+<body>
+    <!-- This Body is an example of how to create the Logged in Page (opening and closing the form upon click) -->
+    <div id="mainButton">
+        <div class="btn-text" onclick="openForm()"><input type="image" src="../assets/images/SKN-ICON.png"></div>
+        <div class="modal">
+            <!-- Don't know if a form is necessary here; requires further deliberation.
+            <form class="client-form" method="POST" action="forms/client-home.html"> -->
+
+                <div class="close-button" onclick="closeForm()">x</div>
+
+                <div class="form-title">Is This You?</div>
+                <!-- This is where the client's name will be populated. -->
+                <div class="form-button" type="submit" value="">
+                    Populated Name
+                </div>
+                <br><br>
+                
+                <!-- If the client's name is incorrect, we close the window and alert the client. 
+                     While this implementation works for now, we can tweak it for a more customized
+                     alert option.
+                -->
+                <div class="form-button" onclick="closeForm(); showAlert();">Do Not Recognize Name</div>
+                <script type="text/javascript">
+                    function showAlert() {
+                      var myText = "Oops! Sorry for the inconvenience. Please contact your banker for immediate assistance.";
+                      alert (myText);
+                    }
+                </script>
+            <!-- </form> -->
+            <script src="../login.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
